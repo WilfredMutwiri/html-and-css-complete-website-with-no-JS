@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: rgb(197, 194, 194);
+}
+
+/*this is the header ssection including the page logo and navbar*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.title {
+    margin: 10px;
+    display: flex;
+}
+
+.title img {
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+}
+
+.title p {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.title span {
+    color: rgb(0, 0, 255);
+}
+
+.navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.navbar a {
+    border-radius: 50px;
+    width: 100%;
+    padding: 6px;
+    text-decoration: none;
+    color: rgb(20, 20, 20);
+    margin-right: 20px;
+}
+
+.navbar a:hover {
+    color: rgb(247, 242, 242);
+    background-color: rgb(10, 105, 248);
+}
+
+/*this is the homepage content*/
+.description {
+    display: flex;
+
+}
+
+.description img {
+    margin: 30px;
+    border-radius: 100px;
+}
+
+.content1 {
+    margin-top: 50px;
+    padding: 30px;
+}
+
+#p1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#p2 {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+#p2 a {
+    text-decoration: none;
+}
+
+#p2 a:hover {
+    color: rgb(248, 6, 6);
+}
+
+#call button {
+    margin-top: 40px;
+    width: 200px;
+    height: 40px;
+    font-size: 15px;
+    color: rgb(247, 242, 242);
+    border-radius: 50px;
+    background-color: rgb(9, 9, 247);
+}
+
+#call button:hover {
+    background: rgb(243, 3, 3);
+}
+
+@media screen and (max-width:768px) {
+    * {
+        background: rgb(7, 7, 7);
+        color: white;
+    }
+
+    /*this media is for the header section*/
+    .navbar li {
+        display: flex;
+        padding: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .navbar li a {
+        width: 100%;
+        padding-left: 50%;
+        margin: 10;
+        height: 25px;
+        color: rgb(243, 237, 237);
+    }
+
+    /*this is the home page content section*/
+    .description {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    #call button {
+        margin-left: 30%;
+    }
+}
