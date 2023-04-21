@@ -102,6 +102,143 @@
     background: rgb(243, 3, 3);
 }
 
+/* this is the about section*/
+.aboutp {
+    text-align: center;
+    margin-top: 200px;
+    font-size: 20px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    background: rgb(77, 67, 67);
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.mission,
+.vision,
+.values {
+    height: 100px;
+    width: 29%;
+    margin-bottom: 150px;
+    background-color: rgb(77, 67, 67);
+    color: rgb(253, 245, 245);
+    padding: 23px;
+
+}
+
+.mission p,
+h3,
+.vision p,
+h3,
+.values li {
+    background-color: rgb(77, 67, 67);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px;
+}
+
+.values li {
+    list-style: circle;
+}
+
+/*this is the team section*/
+.teamp1 h3 {
+    text-align: center;
+    color: rgb(245, 243, 243);
+    font-size: 30px;
+    margin-top: 0px;
+    background: rgb(9, 9, 247);
+    font-weight: bolder;
+    width: auto;
+    padding: 50px;
+}
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+    width: auto;
+    height: 200px;
+}
+
+#CEO h3,
+#devs h3,
+#tech h3,
+#docs h3 {
+    color: rgb(245, 243, 243);
+    border-radius: 400px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+#CEO figcaption {
+    margin-left: 30px;
+}
+
+#devs p,
+#tech p,
+#docs p {
+    background-color: rgb(9, 9, 247);
+    color: rgb(245, 243, 243);
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#devs li,
+#tech li,
+#docs li {
+    list-style: circle;
+    background-color: rgb(9, 9, 247);
+    color: rgb(245, 243, 243);
+    display: flex;
+    padding-bottom: 15px;
+}
+
+#devs img,
+#tech img,
+#docs img {
+    border-radius: 20px;
+    height: 50px;
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+#devs span,
+#tech span,
+#docs span {
+    padding: 10px;
+    background-color: rgb(9, 9, 247);
+
+}
+
+#CEO,
+#devs,
+#tech,
+#docs {
+    width: 30%;
+    font-size: 19px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgb(9, 9, 247);
+}
+
+#CEO figure,
+figcaption,
+#caption1 {
+    background: rgb(9, 9, 247);
+    color: white;
+}
+
+#CEO img {
+    padding: 10px;
+    border-radius: 200px;
+    background-color: blue;
+}
+
 @media screen and (max-width:768px) {
     * {
         background: rgb(7, 7, 7);
@@ -133,5 +270,13 @@
 
     #call button {
         margin-left: 30%;
+    }
+
+    /*this is the about section*/
+    .mission,
+    .vision,
+    .values {
+        padding: 1;
+        flex: 1 0 250px;
     }
 }
