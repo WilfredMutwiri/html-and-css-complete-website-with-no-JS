@@ -10,6 +10,8 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
 }
 
 .title {
@@ -62,10 +64,12 @@
 .description img {
     margin: 30px;
     border-radius: 100px;
+    margin-top: 80px;
+
 }
 
 .content1 {
-    margin-top: 50px;
+    margin-top: 80px;
     padding: 30px;
 }
 
@@ -96,6 +100,7 @@
     color: rgb(247, 242, 242);
     border-radius: 50px;
     background-color: rgb(9, 9, 247);
+    margin-bottom: 100px;
 }
 
 #call button:hover {
@@ -105,7 +110,7 @@
 /* this is the about section*/
 .aboutp {
     text-align: center;
-    margin-top: 200px;
+    padding-top: 200px;
     font-size: 20px;
 }
 
@@ -116,6 +121,7 @@
     background: rgb(77, 67, 67);
     flex-wrap: wrap;
     width: 100%;
+    padding-top: 100px;
 }
 
 .mission,
@@ -153,15 +159,16 @@ h3,
     background: rgb(9, 9, 247);
     font-weight: bolder;
     width: auto;
-    padding: 50px;
+    padding-top: 100px;
 }
 
 .team {
     display: flex;
     justify-content: space-around;
-    padding: 0px;
     width: auto;
     height: 200px;
+    background-color: rgb(9, 9, 247);
+
 }
 
 #CEO h3,
@@ -197,6 +204,15 @@ h3,
     color: rgb(245, 243, 243);
     display: flex;
     padding-bottom: 15px;
+}
+
+#CEO figcaption,
+#devs ul,
+#tech ul,
+#docs ul {
+    padding-bottom: 94px;
+    background-color: rgb(9, 9, 247);
+
 }
 
 #devs img,
@@ -239,10 +255,107 @@ figcaption,
     background-color: blue;
 }
 
+/*this is the products section*/
+#title {
+    margin-top: 250px;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+.products h3 {
+    color: rgb(253, 252, 252);
+}
+
+#pres,
+#cons,
+#soft {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+#pres p,
+#cons p,
+#soft p {
+    margin-top: 20px;
+    font-size: 19px;
+    line-height: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+}
+
+#pres img,
+#cons img,
+#soft img {
+    border-radius: 70px;
+}
+
+/*this is the testimonies section*/
+#testi p,
+#testi strong {
+    background: rgb(44, 42, 42);
+    color: white;
+    padding-top: 80px;
+    padding-bottom: 10px;
+}
+
+#testi p {
+    padding-left: 20px;
+}
+
+#testi h2 {
+    background: rgb(63, 56, 56);
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 100px;
+    padding-bottom: 10px;
+}
+
+/*this is the call section*/
+#call p {
+    background: rgb(29, 28, 28);
+    padding-top: 100px;
+    color: rgb(252, 249, 249);
+    font-size: 20px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+}
+
+#call button {
+    margin-left: 40%;
+    background: rgb(4, 4, 250);
+    color: rgb(252, 248, 248);
+    text-decoration: none;
+}
+
+
+/*this is the footer section*/
+#footer p {
+    background: rgb(12, 12, 12);
+    color: rgb(252, 5, 5);
+    padding-top: 100px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+#footer {
+    display: flex;
+    background-color: rgb(12, 12, 12);
+    padding-bottom: 100px;
+    justify-content: space-around;
+}
+
 @media screen and (max-width:768px) {
     * {
         background: rgb(7, 7, 7);
         color: white;
+    }
+
+    .header {
+        position: absolute;
     }
 
     /*this media is for the header section*/
